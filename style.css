@@ -127,7 +127,7 @@ input:focus {
   top: 0;
   left: 0;
   z-index: 1000;
-  transition: top 0.3s ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
 @media screen and (max-width: 1023px) {
   .glass-craft-homepage .header {
@@ -303,6 +303,11 @@ input:focus {
   border: 1px solid var(--link-collor);
 }
 @media screen and (max-width: 1023px) {
+  .glass-craft-homepage .header .wrapp-line {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
   .glass-craft-homepage .header .bottom {
     display: none;
   }
@@ -337,6 +342,11 @@ input:focus {
   width: 100%;
   margin: 0 auto;
   margin-top: 177px;
+}
+@media screen and (max-width: 1023px) {
+  .body-container {
+    margin-top: 70px;
+  }
 }
 .body-container .button-props {
   display: inline-block;

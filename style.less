@@ -86,7 +86,8 @@ input:focus {
         top: 0;
         left: 0;
         z-index: 1000;
-        transition: top 0.3s ease-in-out;
+        transition: top 0.2s ease-in-out;
+
         @media screen and (max-width:1023px) {
             height: 70px;
         }
@@ -284,6 +285,9 @@ input:focus {
 
         .wrapp-line {
             border: 1px solid var(--link-collor);
+            @media screen and (max-width:1023px){
+                display: none;
+            }
         }
 
         .bottom {
@@ -329,6 +333,10 @@ input:focus {
     width: 100%;
     margin: 0 auto;
     margin-top: 177px;
+
+    @media screen and (max-width:1023px) {
+        margin-top: 70px;
+    }
 
     // button-component
     .button-props {
