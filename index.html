@@ -7,11 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="glass-craft-homepage">
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-top flex">
                 <div class="left">
@@ -28,10 +30,12 @@
                         <span class="ph-no">713-690-8282</span>
                     </a>
                     <hr>
-                    <span class="material-symbols-outlined">
-                        home
-                    </span>
-                    <span class="location">Dealer Locator</span>
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <span class="location">Dealer Locator</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -42,7 +46,9 @@
                         <span class="material-symbols-outlined">menu</span>
                     </div>
                     <div class="main-logo">
-                        <img src="images/logo.png" alt="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
                     </div>
                     <div class="search-cont">
                         <input type="text" placeholder="Search GlassCraft">
@@ -186,33 +192,40 @@
                     </a>
                 </div>
                 <div class="sample-images">
-                    <img src="images/catelog.png" alt="catelog">
+                    <img src="images/catelog-image.png" alt="catelog">
                 </div>
             </div>
         </section>
-        <section class="featured-products">
+        <section class="featured-products-carousal">
             <h3 class="section-heading">
                 Featured Products
             </h3>
-            <div class="wrapper flex">
-                <div class="product item-1">
-                    <div class="image">
-                        <img src="images/Rustic-chevron-1.png" alt="Rustic-chevron">
+            <div class="carousal-container">
+                <div class="products-wrapper flex">
+                    <div class="product item-1">
+                        <div class="image">
+                            <img src="images/Rustic-chevron-1.png" alt="Rustic-chevron">
+                        </div>
+                        <p class="name">Rustic Farmhouse Chevron 1</p>
                     </div>
-                    <p class="name">Rustic Farmhouse Chevron 1</p>
-                </div>
-                <div class="product item-2">
-                    <div class="image">
-                        <img src="images/RusticFarmhouseVertical2.png" alt="RusticFarmhouseVertical2">
+                    <div class="product item-2">
+                        <div class="image">
+                            <img src="images/RusticFarmhouseVertical2.png" alt="RusticFarmhouseVertical2">
+                        </div>
+                        <p class="name">Rustic Farmhouse Vertical 2</p>
                     </div>
-                    <p class="name">Rustic Farmhouse Vertical 2</p>
-                </div>
-                <div class="product item-3  ">
-                    <div class="image">
-                        <img src="images/6Lite1PanelContemporaryMetal.png" alt="6Lite1PanelContemporaryMetal">
+                    <div class="product item-3  ">
+                        <div class="image">
+                            <img src="images/6Lite1PanelContemporaryMetal.png" alt="6Lite1PanelContemporaryMetal">
+                        </div>
+                        <p class="name">6 Lite 1 Panel Contemporary Metal</p>
                     </div>
-                    <p class="name">6 Lite 1 Panel Contemporary Metal</p>
                 </div>
+                <btn class="carousal-arrow flex">
+                    <span class="material-symbols-rounded next-btn">
+                        arrow_forward_ios
+                    </span>
+                </btn>
             </div>
         </section>
         <section class="about-glass-craft">
@@ -231,12 +244,95 @@
             </div>
         </section>
         <div class="detailed-about">
-            <p>For 40 years, GlassCraft Door Company has focused on offering its customers a unique market advantage and customer service satisfaction. From its start in 1997 as a glass supply retail store in Houston, the company has grown into being the #1 Hardwood Entry Door Company in the country, and an award-winning manufacturer of premium fiberglass entry doors and a proud manufacturer of distinctive steel doors and sliding barn doors.</p>
+            <p>For 40 years, GlassCraft Door Company has focused on offering its customers a unique market advantage and
+                customer service satisfaction. From its start in 1997 as a glass supply retail store in Houston, the
+                company has grown into being the #1 Hardwood Entry Door Company in the country, and an award-winning
+                manufacturer of premium fiberglass entry doors and a proud manufacturer of distinctive steel doors and
+                sliding barn doors.</p>
         </div>
     </main>
     <footer class="footer">
-        
+        <div class="news-letter">
+            <div class="wrapper flex">
+                <div class="left flex">
+                    <span class="material-symbols-outlined mail-icon">
+                        mail
+                    </span>
+                    <strong>Join our Newletter.</strong>
+                </div>
+                <p>Stay up-to-date on the latest news and product releases from GlassCraft.</p>
+                <div class="right-inputs flex">
+                    <input type="text" placeholder="Enter Email">
+                    <a href="#" class="flex">Subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer">
+            <div class="container">
+                <div class="inner-cont">
+                    <div class="wrapper flex">
+                        <div class="site-links flex">
+                            <div class="item">
+                                <h6 class="title">Account</h6>
+                                <ul class="links">
+                                    <li> <a href="#">Dealer Sign In</a></li>
+                                    <li> <a href="#">Locate A Dealer</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <h6 class="title">Company</h6>
+                                <ul class="links">
+                                    <li> <a href="#">About Us</a> </li>
+                                    <li> <a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <h6 class="title">Address</h6>
+                                <ul class="links">
+                                    <li> <a href="#">2002 Brittmoore Rd Houston,TX 77043 US</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <h6 class="title">Phone</h6>
+                                <ul class="links">
+                                    <li> <a href="#">713-690-8282</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact-details">
+                            <div class="top">
+                                <p class="title">NEED HELP? CALL OUR TEAM!</p>
+                                <p class="contact-no"><a href="#">713-690-8282</a></p>
+                                <p class="avbt">Hours: Monday–Friday, 9am–5pm CST</p>
+                            </div>
+                            <div class="bottom">
+                                <p>Follow Us:</p>
+                                <ul class="social-icons flex">
+                                    <li><a href="#"><img src="images/fb.png" alt="fb"></a></li>
+                                    <li><a href="#"><img src="images/x.png" alt="x platform"></a></li>
+                                    <li><a href="#"><img src="images/insta.png" alt="insta"></a></li>
+                                    <li><a href="#"><img src="images/linkedIn.png" alt="linkedIn"></a></li>
+                                    <li><a href="#"><img src="images/yt.png" alt="yt"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-rights flex">
+                    <p class="secure-shop-txt">
+                        <span class="material-symbols-outlined lock-icon">
+                            lock
+                        </span>
+                        <strong>100% SECURE SHOPPING</strong>
+                    </p>
+                    <p class="all-rights-txt">
+                        Copyright ©2021 GlassCraft. All Rights Reserved. Site Design by <a href="#">EYStudios.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>

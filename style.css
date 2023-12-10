@@ -121,6 +121,14 @@ input:focus {
     max-width: 974px;
   }
 }
+.glass-craft-homepage .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out;
+}
 @media screen and (max-width: 1023px) {
   .glass-craft-homepage .header {
     height: 70px;
@@ -205,15 +213,21 @@ input:focus {
     height: 30px;
   }
 }
-.glass-craft-homepage .header .header-bottom .top .inner-container .search-cont {
+@media screen and (max-width: 320px) {
+  .glass-craft-homepage .header .header-bottom .top .inner-container .main-logo {
+    width: 100px;
+    height: 20px;
+  }
+}
+.glass-craft-homepage .header .header-bottom .top .search-cont {
   position: relative;
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .header .header-bottom .top .inner-container .search-cont {
+  .glass-craft-homepage .header .header-bottom .top .search-cont {
     display: none;
   }
 }
-.glass-craft-homepage .header .header-bottom .top .inner-container .search-cont input {
+.glass-craft-homepage .header .header-bottom .top .search-cont input {
   width: 398px;
   height: 42px;
   font: normal 14px/18px var(--raleway);
@@ -223,101 +237,108 @@ input:focus {
   padding: 13px 16px;
   padding-right: 45px;
 }
-.glass-craft-homepage .header .header-bottom .top .inner-container .search-cont input::placeholder {
+.glass-craft-homepage .header .header-bottom .top .search-cont input::placeholder {
   font: normal 14px/18px var(--raleway);
   color: var(--font-secondary);
 }
-.glass-craft-homepage .header .header-bottom .top .inner-container .search-cont .search-icon {
+.glass-craft-homepage .header .header-bottom .top .search-cont .search-icon {
   align-items: start;
   position: absolute;
   top: 8px;
   right: 10px;
 }
-.glass-craft-homepage .header .header-bottom .top .inner-container .search-cont .search-icon hr {
+.glass-craft-homepage .header .header-bottom .top .search-cont .search-icon hr {
   height: 25px;
-  border: 1px solid var(--font-prime-color);
+  border-left: 1px solid var(--font-prime-color);
   margin-right: 10px;
 }
-.glass-craft-homepage .header .header-bottom .top .inner-container .search-cont .search-icon div {
+.glass-craft-homepage .header .header-bottom .top .search-cont .search-icon div {
   height: 20px;
   width: 20px;
 }
-.glass-craft-homepage .header .header-bottom .top .inner-container .search-cont .search-icon div img {
+.glass-craft-homepage .header .header-bottom .top .search-cont .search-icon div img {
   width: 100%;
   height: 100%;
 }
-.glass-craft-homepage .header .header-bottom .top .inner-container .dealer-login .txt,
-.glass-craft-homepage .header .header-bottom .top .inner-container .account-cart .txt {
+.glass-craft-homepage .header .header-bottom .top .dealer-login .txt,
+.glass-craft-homepage .header .header-bottom .top .account-cart .txt {
   font: bold 14px/18px var(--raleway);
   color: var(--link-collor);
 }
-.glass-craft-homepage .header .header-bottom .top .inner-container .dealer-login .material-symbols-outlined,
-.glass-craft-homepage .header .header-bottom .top .inner-container .account-cart .material-symbols-outlined {
+.glass-craft-homepage .header .header-bottom .top .dealer-login .material-symbols-outlined,
+.glass-craft-homepage .header .header-bottom .top .account-cart .material-symbols-outlined {
   color: var(--link-collor);
+  vertical-align: bottom;
 }
-.glass-craft-homepage .header .header-bottom .top .inner-container .dealer-login .account,
-.glass-craft-homepage .header .header-bottom .top .inner-container .account-cart .account {
+.glass-craft-homepage .header .header-bottom .top .dealer-login .account,
+.glass-craft-homepage .header .header-bottom .top .account-cart .account {
   margin-right: 30px;
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .header .header-bottom .top .inner-container .dealer-login .account,
-  .glass-craft-homepage .header .header-bottom .top .inner-container .account-cart .account {
+  .glass-craft-homepage .header .header-bottom .top .dealer-login .account,
+  .glass-craft-homepage .header .header-bottom .top .account-cart .account {
     margin-right: 20px;
   }
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .header .header-bottom .top .inner-container .dealer-login {
+  .glass-craft-homepage .header .header-bottom .top .dealer-login {
     display: none;
   }
 }
-.glass-craft-homepage .header .header-bottom .top .inner-container .account-cart {
+.glass-craft-homepage .header .header-bottom .top .account-cart {
   display: none;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .header .header-bottom .top .inner-container .account-cart {
+  .glass-craft-homepage .header .header-bottom .top .account-cart {
     display: block;
   }
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .header .header-bottom .top .inner-container .account-cart .account .txt,
-  .glass-craft-homepage .header .header-bottom .top .inner-container .account-cart .cart .txt {
+  .glass-craft-homepage .header .header-bottom .top .account-cart .account .txt,
+  .glass-craft-homepage .header .header-bottom .top .account-cart .cart .txt {
     display: none;
   }
 }
-.glass-craft-homepage .header .header-bottom .wrapp-line {
+.glass-craft-homepage .header .wrapp-line {
   border: 1px solid var(--link-collor);
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .header .header-bottom .bottom {
+  .glass-craft-homepage .header .bottom {
     display: none;
   }
 }
-.glass-craft-homepage .header .header-bottom .bottom .container {
+.glass-craft-homepage .header .bottom .container {
   max-width: 1000px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .header .header-bottom .bottom .container {
+  .glass-craft-homepage .header .bottom .container {
     max-width: 974px;
   }
 }
-.glass-craft-homepage .header .header-bottom .bottom .container ul {
+.glass-craft-homepage .header .bottom .container ul {
   align-items: unset;
 }
-.glass-craft-homepage .header .header-bottom .bottom .container ul .link.active {
+.glass-craft-homepage .header .bottom .container ul .link.active {
   background-color: #00203D;
 }
-.glass-craft-homepage .header .header-bottom .bottom .container ul .link {
+.glass-craft-homepage .header .bottom .container ul .link {
   padding: 11px 20px;
   font: bold 18px/16px var(--raleway);
   color: var(--link-collor);
 }
-.glass-craft-homepage .header .header-bottom .bottom .container ul .link a {
+.glass-craft-homepage .header .bottom .container ul .link a {
   vertical-align: middle;
 }
-.glass-craft-homepage .header .header-bottom .bottom .container ul .link a .drop-down-icon {
+.glass-craft-homepage .header .bottom .container ul .link a .drop-down-icon {
   color: #E84B37;
 }
-.glass-craft-homepage .body-container .button-props {
+.body-container {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 177px;
+}
+.body-container .button-props {
   display: inline-block;
   font: bold 16px/20px var(--raleway);
   color: #6E605D;
@@ -326,13 +347,18 @@ input:focus {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .button-props {
+  .body-container .button-props {
     font-size: 12px;
     line-height: 15px;
     padding: 11px 45px;
   }
 }
-.glass-craft-homepage .body-container .carousal {
+@media screen and (max-width: 374px) {
+  .body-container .button-props {
+    font-size: 12px;
+  }
+}
+.body-container .carousal {
   background-image: url(images/curosal-bg.png);
   background-position: center;
   background-size: cover;
@@ -340,75 +366,75 @@ input:focus {
   padding: 54px 35px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .carousal {
+  .body-container .carousal {
     padding: 12px 25px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .carousal {
+  .body-container .carousal {
     padding: 7px 20px;
   }
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .carousal {
+  .body-container .carousal {
     background-image: unset;
     padding: 0;
   }
 }
-.glass-craft-homepage .body-container .carousal .mobile-image {
+.body-container .carousal .mobile-image {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .carousal .mobile-image {
+  .body-container .carousal .mobile-image {
     display: block;
   }
 }
-.glass-craft-homepage .body-container .carousal .card {
+.body-container .carousal .card {
   padding: 30px 20px;
   background-color: #6e605ded;
   max-width: 430px;
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .carousal .card {
+  .body-container .carousal .card {
     max-width: 100%;
     text-align: center;
     padding: 20px;
   }
 }
-.glass-craft-homepage .body-container .carousal .card .card-heading {
+.body-container .carousal .card .card-heading {
   font: normal 48px/48px var(--unna);
   color: var(--link-collor);
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .carousal .card .card-heading {
+  .body-container .carousal .card .card-heading {
     font-size: 34px;
     line-height: 34px;
   }
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .carousal .card .card-heading {
+  .body-container .carousal .card .card-heading {
     max-width: 311px;
     margin: 0 auto;
   }
 }
-.glass-craft-homepage .body-container .carousal .card p {
+.body-container .carousal .card p {
   font: 500 22px/26px var(--raleway);
   color: var(--link-collor);
   margin: 10px 0 30px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .carousal .card p {
+  .body-container .carousal .card p {
     margin: 10px 0 20px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .carousal .card p {
+  .body-container .carousal .card p {
     font-size: 18px;
     line-height: 21px;
   }
 }
-.glass-craft-homepage .body-container .carousal .card a {
+.body-container .carousal .card a {
   display: inline-block;
   font: bold 16px/20px var(--raleway);
   color: #6E605D;
@@ -417,158 +443,161 @@ input:focus {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .carousal .card a {
+  .body-container .carousal .card a {
     font-size: 12px;
     line-height: 15px;
     padding: 11px 45px;
   }
 }
-.glass-craft-homepage .body-container .our-products {
+@media screen and (max-width: 374px) {
+  .body-container .carousal .card a {
+    font-size: 12px;
+  }
+}
+.body-container .our-products {
   margin-top: 50px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .our-products {
+  .body-container .our-products {
     margin-top: 46px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .our-products {
+  .body-container .our-products {
     margin-top: 30px;
   }
 }
-.glass-craft-homepage .body-container .our-products .heading {
+.body-container .our-products .heading {
   text-align: center;
   max-width: 720px;
   width: 100%;
   margin: 0 auto;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .our-products .heading {
+  .body-container .our-products .heading {
     max-width: 630px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .our-products .heading {
+  .body-container .our-products .heading {
     max-width: 590px;
   }
 }
-.glass-craft-homepage .body-container .our-products .heading h2 {
+.body-container .our-products .heading h2 {
   font: normal 42px/48px var(--unna);
   color: var(--font-prime-color);
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .our-products .heading h2 {
+  .body-container .our-products .heading h2 {
     font-size: 36px;
     line-height: 40px;
   }
 }
-.glass-craft-homepage .body-container .our-products .heading p {
+.body-container .our-products .heading p {
   font: 500 18px/22px var(--raleway);
-  color: var(--font-prime-color);
+  color: var(--font-secondary);
   margin: 14px 0 40px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .our-products .heading p {
+  .body-container .our-products .heading p {
     margin: 14px 0 32px;
     font-size: 16px;
     line-height: 20px;
   }
 }
 @media screen and (max-width: 600px) {
-  .glass-craft-homepage .body-container .our-products .heading p {
+  .body-container .our-products .heading p {
     max-width: 335px;
     width: 100%;
     margin: 14px auto 30px;
   }
 }
-.glass-craft-homepage .body-container .our-products .sample-visuals {
-  padding: 0 45px;
+.body-container .our-products .sample-visuals {
+  padding: 0px 40px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals {
+  .body-container .our-products .sample-visuals {
     padding: 0 25px;
   }
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals {
+  .body-container .our-products .sample-visuals {
     flex-flow: column;
     padding: 0 40px;
   }
 }
-.glass-craft-homepage .body-container .our-products .sample-visuals .product {
+.body-container .our-products .sample-visuals .product {
   max-width: 410px;
   width: 100%;
   margin: 0 auto;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .product {
+  .body-container .our-products .sample-visuals .product {
     max-width: 307px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .product {
+  .body-container .our-products .sample-visuals .product {
     max-width: 228px;
   }
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .product {
-    max-width: 100%;
-    margin-bottom: 50px;
+  .body-container .our-products .sample-visuals .product {
+    max-width: 80%;
   }
 }
-.glass-craft-homepage .body-container .our-products .sample-visuals .product .prod-image {
-  max-width: 410px;
-  width: 100%;
-  margin: 0 auto;
+@media screen and (max-width: 470px) {
+  .body-container .our-products .sample-visuals .product {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 400px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .product .prod-image {
+  .body-container .our-products .sample-visuals .product .prod-image {
     max-width: 228px;
   }
 }
-@media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .product .about {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-}
-.glass-craft-homepage .body-container .our-products .sample-visuals .product .about .prod-name {
+.body-container .our-products .sample-visuals .product .about .prod-name {
   font: 400 31px/36px var(--unna);
   color: var(--font-prime-color);
   margin-top: 20px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .product .about .prod-name {
+  .body-container .our-products .sample-visuals .product .about .prod-name {
     margin-top: 16px;
     font-size: 24px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .product .about .prod-name {
+  .body-container .our-products .sample-visuals .product .about .prod-name {
     margin-top: 13px;
     line-height: 24px;
   }
 }
-.glass-craft-homepage .body-container .our-products .sample-visuals .product .about p {
+.body-container .our-products .sample-visuals .product .about p {
   font: 500 16px/20px var(--raleway);
-  color: var(--font-prime-color);
+  color: var(--font-secondary);
   margin: 12px 0 20px;
   height: 65px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .product .about p {
+  .body-container .our-products .sample-visuals .product .about p {
     height: 70px;
     font-size: 14px;
     line-height: 18px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .product .about p {
+  .body-container .our-products .sample-visuals .product .about p {
     font-size: 13px;
     line-height: 16px;
   }
 }
-.glass-craft-homepage .body-container .our-products .sample-visuals .product .about a {
+@media screen and (max-width: 767px) {
+  .body-container .our-products .sample-visuals .product .about p {
+    height: unset;
+  }
+}
+.body-container .our-products .sample-visuals .product .about a {
   display: inline-block;
   font: bold 16px/20px var(--raleway);
   color: #6E605D;
@@ -579,106 +608,120 @@ input:focus {
   color: var(--link-collor);
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .product .about a {
+  .body-container .our-products .sample-visuals .product .about a {
     font-size: 12px;
     line-height: 15px;
     padding: 11px 45px;
   }
 }
+@media screen and (max-width: 374px) {
+  .body-container .our-products .sample-visuals .product .about a {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .product .about a {
+  .body-container .our-products .sample-visuals .product .about a {
     font-size: 14px;
   }
 }
-.glass-craft-homepage .body-container .our-products .sample-visuals .itm-2 {
+.body-container .our-products .sample-visuals .itm-2 {
   margin: 0 35px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .itm-2 {
+  .body-container .our-products .sample-visuals .itm-2 {
     margin: 0 25px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .itm-2 {
+  .body-container .our-products .sample-visuals .itm-2 {
     margin: 0 20px;
   }
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .our-products .sample-visuals .itm-2 {
+  .body-container .our-products .sample-visuals .itm-2 {
     margin: 0;
     margin-bottom: 50px;
+    margin-top: 50px;
   }
 }
-.glass-craft-homepage .body-container .product-catelog-sec {
+.body-container .product-catelog-sec {
   padding-left: 124px;
   margin-top: 100px;
   margin-bottom: 100px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .product-catelog-sec {
+  .body-container .product-catelog-sec {
     padding-left: 45px;
     margin-bottom: 60px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .product-catelog-sec {
+  .body-container .product-catelog-sec {
     padding-left: 35px;
     margin-top: 77px;
     margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .product-catelog-sec {
+  .body-container .product-catelog-sec {
     padding-left: 0;
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
+.body-container .product-catelog-sec .wrapper {
+  overflow: hidden;
+}
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .product-catelog-sec .wrapper {
+  .body-container .product-catelog-sec .wrapper {
     flex-direction: column;
   }
 }
-.glass-craft-homepage .body-container .product-catelog-sec .wrapper .txt-cont {
-  max-width: 40%;
+.body-container .product-catelog-sec .wrapper .txt-cont {
+  max-width: 446px;
   width: 100%;
   margin-right: 30px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .product-catelog-sec .wrapper .txt-cont {
+  .body-container .product-catelog-sec .wrapper .txt-cont {
     margin-right: 0;
   }
 }
+@media screen and (max-width: 1023px) {
+  .body-container .product-catelog-sec .wrapper .txt-cont {
+    max-width: 344px;
+  }
+}
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .product-catelog-sec .wrapper .txt-cont {
+  .body-container .product-catelog-sec .wrapper .txt-cont {
     margin-bottom: 30px;
     max-width: 100%;
     text-align: center;
     padding: 0 20px;
   }
 }
-.glass-craft-homepage .body-container .product-catelog-sec .wrapper .txt-cont .prod-name {
+.body-container .product-catelog-sec .wrapper .txt-cont .prod-name {
   font: 400 42px/48px var(--unna);
   color: var(--font-prime-color);
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .product-catelog-sec .wrapper .txt-cont .prod-name {
+  .body-container .product-catelog-sec .wrapper .txt-cont .prod-name {
     font-size: 36px;
     line-height: 40px;
   }
 }
-.glass-craft-homepage .body-container .product-catelog-sec .wrapper .txt-cont p {
+.body-container .product-catelog-sec .wrapper .txt-cont p {
   font: 500 20px/24px var(--raleway);
-  color: var(--font-prime-color);
+  color: var(--font-secondary);
   margin: 14px 0 20px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .product-catelog-sec .wrapper .txt-cont p {
+  .body-container .product-catelog-sec .wrapper .txt-cont p {
     font-size: 16px;
     line-height: 20px;
   }
 }
-.glass-craft-homepage .body-container .product-catelog-sec .wrapper .txt-cont a {
+.body-container .product-catelog-sec .wrapper .txt-cont a {
   display: inline-block;
   font: bold 16px/20px var(--raleway);
   color: #6E605D;
@@ -689,104 +732,267 @@ input:focus {
   color: var(--link-collor);
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .product-catelog-sec .wrapper .txt-cont a {
+  .body-container .product-catelog-sec .wrapper .txt-cont a {
     font-size: 12px;
     line-height: 15px;
     padding: 11px 45px;
   }
 }
+@media screen and (max-width: 374px) {
+  .body-container .product-catelog-sec .wrapper .txt-cont a {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .product-catelog-sec .wrapper .txt-cont a {
+  .body-container .product-catelog-sec .wrapper .txt-cont a {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .product-catelog-sec .wrapper .txt-cont a {
+  .body-container .product-catelog-sec .wrapper .txt-cont a {
     padding: 12px 35px;
   }
 }
-.glass-craft-homepage .body-container .product-catelog-sec .wrapper .sample-images {
-  max-width: 60%;
+.body-container .product-catelog-sec .wrapper .sample-images {
+  max-width: 964px;
   width: 100%;
+  margin-right: -197px;
+  max-height: 465px;
 }
-@media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .product-catelog-sec .wrapper .sample-images {
-    max-width: 100%;
+@media screen and (max-width: 1279px) {
+  .body-container .product-catelog-sec .wrapper .sample-images {
+    margin-right: -137px;
   }
 }
-.glass-craft-homepage .body-container .featured-products {
-  padding: 0 73px;
+@media screen and (max-width: 1023px) {
+  .body-container .product-catelog-sec .wrapper .sample-images {
+    margin-right: -120px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .body-container .product-catelog-sec .wrapper .sample-images {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+.body-container .featured-products-carousal {
+  padding-left: 73px;
   margin-bottom: 100px;
 }
-.glass-craft-homepage .body-container .featured-products .section-heading {
+@media screen and (max-width: 1279px) {
+  .body-container .featured-products-carousal {
+    padding-left: 25px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .body-container .featured-products-carousal {
+    padding-left: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .body-container .featured-products-carousal {
+    padding-left: 20px;
+    margin-bottom: 80px;
+  }
+}
+.body-container .featured-products-carousal .section-heading {
   font: bold 24px/29px var(--raleway);
   color: var(--font-prime-color);
   margin-bottom: 40px;
   text-align: center;
 }
-.glass-craft-homepage .body-container .featured-products .wrapper {
-  margin: 0 -10px;
+@media screen and (max-width: 1279px) {
+  .body-container .featured-products-carousal .section-heading {
+    margin-bottom: 30px;
+  }
 }
-.glass-craft-homepage .body-container .featured-products .wrapper .product {
+@media screen and (max-width: 1023px) {
+  .body-container .featured-products-carousal .section-heading {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+}
+.body-container .featured-products-carousal .carousal-container {
+  position: relative;
+  overflow: hidden;
+}
+.body-container .featured-products-carousal .carousal-container .products-wrapper {
+  margin: 0 -10px;
+  margin-right: -114px;
+}
+@media screen and (max-width: 1279px) {
+  .body-container .featured-products-carousal .carousal-container .products-wrapper {
+    margin: 0 -7.5px;
+    margin-right: -162px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .body-container .featured-products-carousal .carousal-container .products-wrapper {
+    margin-right: -130px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .body-container .featured-products-carousal .carousal-container .products-wrapper {
+    margin-right: -140px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .body-container .featured-products-carousal .carousal-container .products-wrapper {
+    margin-right: -480px;
+  }
+}
+.body-container .featured-products-carousal .carousal-container .products-wrapper .product {
   margin: 0 10px;
 }
-.glass-craft-homepage .body-container .featured-products .wrapper .product .image {
+@media screen and (max-width: 1279px) {
+  .body-container .featured-products-carousal .carousal-container .products-wrapper .product {
+    margin: 0 7.5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .body-container .featured-products-carousal .carousal-container .products-wrapper .product {
+    max-width: 276px;
+    width: 100%;
+  }
+}
+.body-container .featured-products-carousal .carousal-container .products-wrapper .product .image {
   max-width: 100%;
   width: 100%;
 }
-.glass-craft-homepage .body-container .featured-products .wrapper .product .name {
+.body-container .featured-products-carousal .carousal-container .products-wrapper .product .name {
   margin-top: 20px;
   font: bold 22px/24px var(--raleway);
   color: var(--font-prime-color);
+  height: 20px;
 }
-.glass-craft-homepage .body-container .about-glass-craft {
+@media screen and (max-width: 1279px) {
+  .body-container .featured-products-carousal .carousal-container .products-wrapper .product .name {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .body-container .featured-products-carousal .carousal-container .products-wrapper .product .name {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+.body-container .featured-products-carousal .carousal-container .carousal-arrow {
+  position: absolute;
+  top: 50%;
+  right: 53px;
+  transform: translate(-50%, -50%);
+  background-color: var(--link-collor);
+  border-radius: 23px;
+  height: 45px;
+  width: 45px;
+  justify-content: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 1279px) {
+  .body-container .featured-products-carousal .carousal-container .carousal-arrow {
+    right: 10px;
+    top: 45%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .body-container .featured-products-carousal .carousal-container .carousal-arrow {
+    right: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .body-container .featured-products-carousal .carousal-container .carousal-arrow {
+    right: 0;
+  }
+}
+.body-container .featured-products-carousal .carousal-container .carousal-arrow .next-btn {
+  color: var(--font-prime-color);
+  font-size: 28px;
+}
+.body-container .about-glass-craft {
   margin-bottom: 100px;
 }
-.glass-craft-homepage .body-container .about-glass-craft .image {
-  max-width: 100%;
+@media screen and (max-width: 1023px) {
+  .body-container .about-glass-craft {
+    margin-bottom: 70px;
+  }
+}
+.body-container .about-glass-craft .wrapper {
+  justify-content: start;
+}
+@media screen and (max-width: 767px) {
+  .body-container .about-glass-craft .wrapper {
+    flex-direction: column;
+    padding: 0 20px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 470px) {
+  .body-container .about-glass-craft .wrapper {
+    max-width: 100%;
+  }
+}
+.body-container .about-glass-craft .wrapper .image {
+  max-width: 50%;
   width: 100%;
   margin-right: 100px;
 }
-.glass-craft-homepage .body-container .about-glass-craft .txt-cont {
-  max-width: 45%;
+@media screen and (max-width: 1279px) {
+  .body-container .about-glass-craft .wrapper .image {
+    margin-right: 62px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .body-container .about-glass-craft .wrapper .image {
+    max-width: 43%;
+    margin-right: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .body-container .about-glass-craft .wrapper .image {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}
+.body-container .about-glass-craft .wrapper .txt-cont {
+  max-width: 50%;
   width: 100%;
   margin-right: 30px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .about-glass-craft .txt-cont {
+  .body-container .about-glass-craft .wrapper .txt-cont {
     margin-right: 0;
   }
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .about-glass-craft .txt-cont {
-    margin-bottom: 30px;
+  .body-container .about-glass-craft .wrapper .txt-cont {
+    margin-top: 20px;
     max-width: 100%;
-    text-align: center;
-    padding: 0 20px;
   }
 }
-.glass-craft-homepage .body-container .about-glass-craft .txt-cont .prod-name {
+.body-container .about-glass-craft .wrapper .txt-cont .prod-name {
   font: 400 42px/48px var(--unna);
   color: var(--font-prime-color);
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .about-glass-craft .txt-cont .prod-name {
+  .body-container .about-glass-craft .wrapper .txt-cont .prod-name {
     font-size: 36px;
     line-height: 40px;
   }
 }
-.glass-craft-homepage .body-container .about-glass-craft .txt-cont p {
+.body-container .about-glass-craft .wrapper .txt-cont p {
   font: 500 20px/24px var(--raleway);
-  color: var(--font-prime-color);
+  color: var(--font-secondary);
   margin: 14px 0 20px;
 }
 @media screen and (max-width: 1279px) {
-  .glass-craft-homepage .body-container .about-glass-craft .txt-cont p {
+  .body-container .about-glass-craft .wrapper .txt-cont p {
     font-size: 16px;
     line-height: 20px;
   }
 }
-.glass-craft-homepage .body-container .about-glass-craft .txt-cont a {
+.body-container .about-glass-craft .wrapper .txt-cont a {
   display: inline-block;
   font: bold 16px/20px var(--raleway);
   color: #6E605D;
@@ -797,31 +1003,322 @@ input:focus {
   padding: 15px 30px;
 }
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .about-glass-craft .txt-cont a {
+  .body-container .about-glass-craft .wrapper .txt-cont a {
     font-size: 12px;
     line-height: 15px;
     padding: 11px 45px;
   }
 }
+@media screen and (max-width: 374px) {
+  .body-container .about-glass-craft .wrapper .txt-cont a {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 1023px) {
-  .glass-craft-homepage .body-container .about-glass-craft .txt-cont a {
+  .body-container .about-glass-craft .wrapper .txt-cont a {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 767px) {
-  .glass-craft-homepage .body-container .about-glass-craft .txt-cont a {
+  .body-container .about-glass-craft .wrapper .txt-cont a {
     padding: 12px 20px;
   }
 }
-.glass-craft-homepage .body-container .detailed-about {
+.body-container .detailed-about {
   max-width: 1030px;
   width: 100%;
   margin: 0 auto;
 }
-.glass-craft-homepage .body-container .detailed-about p {
+@media screen and (max-width: 1279px) {
+  .body-container .detailed-about {
+    max-width: 810px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .body-container .detailed-about {
+    max-width: 665px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .body-container .detailed-about {
+    display: none;
+  }
+}
+.body-container .detailed-about p {
   font: 400 14px/20px var(--raleway);
   color: var(--font-prime-color);
 }
-.glass-craft-homepage .footer {
+.footer {
   margin-top: 100px;
+}
+.footer .news-letter {
+  background-color: var(--font-secondary);
+  padding: 10px 0;
+}
+@media screen and (max-width: 1023px) {
+  .footer .news-letter {
+    padding: 30px 0;
+  }
+}
+.footer .news-letter .wrapper {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1279px) {
+  .footer .news-letter .wrapper {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .footer .news-letter .wrapper {
+    max-width: 620px;
+    flex-wrap: wrap;
+  }
+}
+.footer .news-letter .wrapper .left {
+  width: 235px;
+  justify-content: flex-start;
+  flex: 1;
+}
+.footer .news-letter .wrapper .left .mail-icon {
+  color: var(--link-collor);
+  margin-right: 10px;
+}
+.footer .news-letter .wrapper .left strong {
+  font: bold 18px/24px var(--raleway);
+  color: var(--link-collor);
+  text-wrap: nowrap;
+}
+.footer .news-letter .wrapper p {
+  margin-right: 40px;
+  margin-left: 30px;
+  font: normal 16px/18px var(--raleway);
+  color: var(--link-collor);
+}
+@media screen and (max-width: 1023px) {
+  .footer .news-letter .wrapper p {
+    margin: 0;
+    margin: 10px 0 20px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .footer .news-letter .wrapper p {
+    max-width: 351px;
+  }
+}
+.footer .news-letter .wrapper .right-inputs {
+  max-width: 421px;
+  width: 100%;
+  height: 40px;
+}
+@media screen and (max-width: 1279px) {
+  .footer .news-letter .wrapper .right-inputs {
+    max-width: 370px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer .news-letter .wrapper .right-inputs {
+    display: block;
+    max-width: 100%;
+    height: 87px;
+  }
+}
+.footer .news-letter .wrapper .right-inputs input {
+  width: 69%;
+  border: none;
+  font: normal 14px/18px var(--raleway);
+  color: var(--font-secondary);
+  background-color: #F0F0F0;
+  padding: 12px 20px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 425px) {
+  .footer .news-letter .wrapper .right-inputs input {
+    width: 100%;
+  }
+}
+.footer .news-letter .wrapper .right-inputs a {
+  width: 31%;
+  height: 100%;
+  background-color: var(--third-color);
+  font: bold 16px/19px var(--raleway);
+  color: var(--link-collor);
+  justify-content: center;
+}
+@media screen and (max-width: 425px) {
+  .footer .news-letter .wrapper .right-inputs a {
+    width: 100%;
+    height: 40px;
+    margin-top: 7px;
+  }
+}
+.footer .main-footer {
+  background-color: #FAFAFA;
+}
+.footer .main-footer .container {
+  max-width: 1080px;
+}
+@media screen and (max-width: 1279px) {
+  .footer .main-footer .container {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .footer .main-footer .container {
+    max-width: 639px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer .main-footer .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+.footer .main-footer .container .inner-cont {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 30px 0;
+}
+.footer .main-footer .container .inner-cont .wrapper {
+  max-width: 984px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1279px) {
+  .footer .main-footer .container .inner-cont .wrapper {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .footer .main-footer .container .inner-cont .wrapper {
+    flex-direction: column;
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer .main-footer .container .inner-cont .wrapper {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+.footer .main-footer .container .inner-cont .wrapper .site-links {
+  margin: 0 -30px;
+  align-items: baseline;
+}
+@media screen and (max-width: 1023px) {
+  .footer .main-footer .container .inner-cont .wrapper .site-links {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+.footer .main-footer .container .inner-cont .wrapper .site-links .item {
+  margin: 0 30px;
+}
+@media screen and (max-width: 1023px) {
+  .footer .main-footer .container .inner-cont .wrapper .site-links .item {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .footer .main-footer .container .inner-cont .wrapper .site-links .item .links {
+    display: none;
+  }
+}
+.footer .main-footer .container .inner-cont .wrapper .site-links .item .title {
+  font: bold 18px/21px var(--raleway);
+  color: #000000;
+  cursor: pointer;
+  padding-bottom: 19px;
+  position: relative;
+}
+@media screen and (max-width: 1023px) {
+  .footer .main-footer .container .inner-cont .wrapper .site-links .item .title {
+    padding: 11px 0;
+    border-bottom: 1px solid #ADAB92;
+  }
+  .footer .main-footer .container .inner-cont .wrapper .site-links .item .title::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    font-weight: 400;
+    color: #A3A3A3;
+  }
+}
+.footer .main-footer .container .inner-cont .wrapper .site-links .item a {
+  font: 400 14px/16px var(--raleway);
+  color: #333F48;
+  display: inline-block;
+  max-width: 140px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1023px) {
+  .footer .main-footer .container .inner-cont .wrapper .contact-details {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer .main-footer .container .inner-cont .wrapper .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer .main-footer .container .inner-cont .wrapper .contact-details .top .title {
+  font: 400 14px/20px var(--raleway);
+  color: #2A3825;
+  text-transform: uppercase;
+}
+.footer .main-footer .container .inner-cont .wrapper .contact-details .top .contact-no {
+  margin: 7px 0 10px;
+}
+.footer .main-footer .container .inner-cont .wrapper .contact-details .top .contact-no a {
+  font: bold 24px/20px var(--raleway);
+  color: var(--font-prime-color);
+}
+.footer .main-footer .container .inner-cont .wrapper .contact-details .top .avbt {
+  font: 400 12px/12px var(--raleway);
+  color: var(--font-prime-color);
+}
+.footer .main-footer .container .inner-cont .wrapper .contact-details .bottom {
+  margin-top: 25px;
+}
+.footer .main-footer .container .inner-cont .wrapper .contact-details .bottom p {
+  font: bold 14px/20px var(--raleway);
+  color: var(--font-prime-color);
+  margin-bottom: 7px;
+}
+.footer .main-footer .container .inner-cont .wrapper .contact-details .bottom .social-icons {
+  margin: 0 -13px;
+}
+.footer .main-footer .container .inner-cont .wrapper .contact-details .bottom .social-icons li {
+  margin: 0 13px;
+}
+.footer .main-footer .container .copy-rights {
+  text-align: center;
+  padding: 17px 0 12px;
+  max-width: 530px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .footer .main-footer .container .copy-rights {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer .main-footer .container .copy-rights .secure-shop-txt .lock-icon {
+  font-size: 14px;
+}
+.footer .main-footer .container .copy-rights .secure-shop-txt strong {
+  font: bold 10px/18px Poppins, sans-serif;
+  color: #000000;
+}
+.footer .main-footer .container .copy-rights .all-rights-txt {
+  font: 400 10px/14px Poppins, sans-serif;
 }
