@@ -70,9 +70,9 @@ body {
   --raleway: Raleway, sans-serif;
   --open-sans: Open Sans, sans-serif;
   --unna: Unna, sans-serif;
-  --font-prime-color: #333333;
+  --font-prime_color: #333333;
   --font-secondary: #58585A;
-  --link-collor: #FFFFFF;
+  --link-color: #FFFFFF;
   --third-color: #E84B37;
 }
 .flex {
@@ -97,7 +97,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: var(--link-collor);
+  color: var(--link-color);
 }
 .background-props {
   background-position: center;
@@ -106,7 +106,7 @@ a {
 }
 .material-symbols-outlined {
   vertical-align: middle;
-  color: var(--font-prime-color);
+  color: var(--font-prime_color);
 }
 input:focus {
   outline: none;
@@ -159,11 +159,11 @@ input:focus {
 }
 .glass-craft-homepage .header .container .header-top .right .ph-no,
 .glass-craft-homepage .header .container .header-top .right .location {
-  font: normal 13p/15px var(--raleway);
-  color: var(--font-prime-color);
+  font: normal 13px/15px var(--raleway);
+  color: var(--font-prime_color);
 }
 .glass-craft-homepage .header .container .header-top .right hr {
-  border: 1px solid var(--font-prime-color);
+  border: 1px solid var(--font-prime_color);
   height: 16px;
   margin: 0 14px;
 }
@@ -199,7 +199,7 @@ input:focus {
 }
 .glass-craft-homepage .header .header-bottom .top .inner-container .hamburg-icon span {
   font-size: 30px;
-  color: var(--link-collor);
+  color: var(--link-color);
 }
 @media screen and (max-width: 1023px) {
   .glass-craft-homepage .header .header-bottom .top .inner-container .main-logo {
@@ -249,7 +249,7 @@ input:focus {
 }
 .glass-craft-homepage .header .header-bottom .top .search-cont .search-icon hr {
   height: 25px;
-  border-left: 1px solid var(--font-prime-color);
+  border-left: 1px solid var(--font-prime_color);
   margin-right: 10px;
 }
 .glass-craft-homepage .header .header-bottom .top .search-cont .search-icon div {
@@ -263,11 +263,11 @@ input:focus {
 .glass-craft-homepage .header .header-bottom .top .dealer-login .txt,
 .glass-craft-homepage .header .header-bottom .top .account-cart .txt {
   font: bold 14px/18px var(--raleway);
-  color: var(--link-collor);
+  color: var(--link-color);
 }
 .glass-craft-homepage .header .header-bottom .top .dealer-login .material-symbols-outlined,
 .glass-craft-homepage .header .header-bottom .top .account-cart .material-symbols-outlined {
-  color: var(--link-collor);
+  color: var(--link-color);
   vertical-align: bottom;
 }
 .glass-craft-homepage .header .header-bottom .top .dealer-login .account,
@@ -300,7 +300,7 @@ input:focus {
   }
 }
 .glass-craft-homepage .header .wrapp-line {
-  border: 1px solid var(--link-collor);
+  border: 1px solid var(--link-color);
 }
 @media screen and (max-width: 1023px) {
   .glass-craft-homepage .header .wrapp-line {
@@ -329,7 +329,7 @@ input:focus {
 .glass-craft-homepage .header .bottom .container ul .link {
   padding: 11px 20px;
   font: bold 18px/16px var(--raleway);
-  color: var(--link-collor);
+  color: var(--link-color);
 }
 .glass-craft-homepage .header .bottom .container ul .link a {
   vertical-align: middle;
@@ -358,7 +358,7 @@ input:focus {
   font: bold 16px/20px var(--raleway);
   color: #6E605D;
   padding: 15px 60px;
-  background-color: var(--link-collor);
+  background-color: var(--link-color);
   text-transform: uppercase;
 }
 @media screen and (max-width: 1023px) {
@@ -419,7 +419,7 @@ input:focus {
 }
 .body-container .carousal .card .card-heading {
   font: normal 48px/48px var(--unna);
-  color: var(--link-collor);
+  color: var(--link-color);
 }
 @media screen and (max-width: 1023px) {
   .body-container .carousal .card .card-heading {
@@ -435,7 +435,7 @@ input:focus {
 }
 .body-container .carousal .card p {
   font: 500 22px/26px var(--raleway);
-  color: var(--link-collor);
+  color: var(--link-color);
   margin: 10px 0 30px;
 }
 @media screen and (max-width: 1279px) {
@@ -454,7 +454,7 @@ input:focus {
   font: bold 16px/20px var(--raleway);
   color: #6E605D;
   padding: 15px 60px;
-  background-color: var(--link-collor);
+  background-color: var(--link-color);
   text-transform: uppercase;
 }
 @media screen and (max-width: 1023px) {
@@ -500,7 +500,7 @@ input:focus {
 }
 .body-container .our-products .heading h2 {
   font: normal 42px/48px var(--unna);
-  color: var(--font-prime-color);
+  color: var(--font-prime_color);
 }
 @media screen and (max-width: 1023px) {
   .body-container .our-products .heading h2 {
@@ -573,7 +573,7 @@ input:focus {
 }
 .body-container .our-products .sample-visuals .product .about .prod-name {
   font: 400 31px/36px var(--unna);
-  color: var(--font-prime-color);
+  color: var(--font-prime_color);
   margin-top: 20px;
 }
 @media screen and (max-width: 1279px) {
@@ -617,10 +617,10 @@ input:focus {
   font: bold 16px/20px var(--raleway);
   color: #6E605D;
   padding: 15px 60px;
-  background-color: var(--link-collor);
+  background-color: var(--link-color);
   text-transform: uppercase;
-  background-color: var(--font-prime-color);
-  color: var(--link-collor);
+  background-color: var(--font-prime_color);
+  color: var(--link-color);
 }
 @media screen and (max-width: 1023px) {
   .body-container .our-products .sample-visuals .product .about a {
@@ -717,7 +717,7 @@ input:focus {
 }
 .body-container .product-catelog-sec .wrapper .txt-cont .prod-name {
   font: 400 42px/48px var(--unna);
-  color: var(--font-prime-color);
+  color: var(--font-prime_color);
 }
 @media screen and (max-width: 1023px) {
   .body-container .product-catelog-sec .wrapper .txt-cont .prod-name {
@@ -741,10 +741,10 @@ input:focus {
   font: bold 16px/20px var(--raleway);
   color: #6E605D;
   padding: 15px 60px;
-  background-color: var(--link-collor);
+  background-color: var(--link-color);
   text-transform: uppercase;
   background-color: #6E605D;
-  color: var(--link-collor);
+  color: var(--link-color);
 }
 @media screen and (max-width: 1023px) {
   .body-container .product-catelog-sec .wrapper .txt-cont a {
@@ -812,7 +812,7 @@ input:focus {
 }
 .body-container .featured-products-carousal .section-heading {
   font: bold 24px/29px var(--raleway);
-  color: var(--font-prime-color);
+  color: var(--font-prime_color);
   margin-bottom: 40px;
   text-align: center;
 }
@@ -878,7 +878,7 @@ input:focus {
 .body-container .featured-products-carousal .carousal-container .products-wrapper .product .name {
   margin-top: 20px;
   font: bold 22px/24px var(--raleway);
-  color: var(--font-prime-color);
+  color: var(--font-prime_color);
   height: 20px;
 }
 @media screen and (max-width: 1279px) {
@@ -897,7 +897,7 @@ input:focus {
   top: 50%;
   right: 53px;
   transform: translate(-50%, -50%);
-  background-color: var(--link-collor);
+  background-color: var(--link-color);
   border-radius: 23px;
   height: 45px;
   width: 45px;
@@ -921,7 +921,7 @@ input:focus {
   }
 }
 .body-container .featured-products-carousal .carousal-container .carousal-arrow .next-btn {
-  color: var(--font-prime-color);
+  color: var(--font-prime_color);
   font-size: 28px;
 }
 .body-container .about-glass-craft {
@@ -988,7 +988,7 @@ input:focus {
 }
 .body-container .about-glass-craft .wrapper .txt-cont .prod-name {
   font: 400 42px/48px var(--unna);
-  color: var(--font-prime-color);
+  color: var(--font-prime_color);
 }
 @media screen and (max-width: 1023px) {
   .body-container .about-glass-craft .wrapper .txt-cont .prod-name {
@@ -1012,7 +1012,7 @@ input:focus {
   font: bold 16px/20px var(--raleway);
   color: #6E605D;
   padding: 15px 60px;
-  background-color: var(--link-collor);
+  background-color: var(--link-color);
   text-transform: uppercase;
   border: 2px solid #6E605D;
   padding: 15px 30px;
@@ -1061,7 +1061,7 @@ input:focus {
 }
 .body-container .detailed-about p {
   font: 400 14px/20px var(--raleway);
-  color: var(--font-prime-color);
+  color: var(--font-prime_color);
 }
 .footer {
   margin-top: 100px;
@@ -1097,19 +1097,19 @@ input:focus {
   flex: 1;
 }
 .footer .news-letter .wrapper .left .mail-icon {
-  color: var(--link-collor);
+  color: var(--link-color);
   margin-right: 10px;
 }
 .footer .news-letter .wrapper .left strong {
   font: bold 18px/24px var(--raleway);
-  color: var(--link-collor);
+  color: var(--link-color);
   text-wrap: nowrap;
 }
 .footer .news-letter .wrapper p {
   margin-right: 40px;
   margin-left: 30px;
   font: normal 16px/18px var(--raleway);
-  color: var(--link-collor);
+  color: var(--link-color);
 }
 @media screen and (max-width: 1023px) {
   .footer .news-letter .wrapper p {
@@ -1158,7 +1158,7 @@ input:focus {
   height: 100%;
   background-color: var(--third-color);
   font: bold 16px/19px var(--raleway);
-  color: var(--link-collor);
+  color: var(--link-color);
   justify-content: center;
 }
 @media screen and (max-width: 425px) {
@@ -1295,18 +1295,18 @@ input:focus {
 }
 .footer .main-footer .container .inner-cont .wrapper .contact-details .top .contact-no a {
   font: bold 24px/20px var(--raleway);
-  color: var(--font-prime-color);
+  color: var(--font-prime_color);
 }
 .footer .main-footer .container .inner-cont .wrapper .contact-details .top .avbt {
   font: 400 12px/12px var(--raleway);
-  color: var(--font-prime-color);
+  color: var(--font-prime_color);
 }
 .footer .main-footer .container .inner-cont .wrapper .contact-details .bottom {
   margin-top: 25px;
 }
 .footer .main-footer .container .inner-cont .wrapper .contact-details .bottom p {
   font: bold 14px/20px var(--raleway);
-  color: var(--font-prime-color);
+  color: var(--font-prime_color);
   margin-bottom: 7px;
 }
 .footer .main-footer .container .inner-cont .wrapper .contact-details .bottom .social-icons {
