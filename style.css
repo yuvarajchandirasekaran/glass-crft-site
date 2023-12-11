@@ -330,12 +330,17 @@ input:focus {
   padding: 11px 20px;
   font: bold 18px/16px var(--raleway);
   color: var(--link-color);
+  cursor: pointer;
 }
 .glass-craft-homepage .header .bottom .container ul .link a {
   vertical-align: middle;
 }
 .glass-craft-homepage .header .bottom .container ul .link a .drop-down-icon {
   color: #E84B37;
+}
+.glass-craft-homepage .header .bottom .container ul .link:hover {
+  background-color: #00203D;
+  transition: 0.3s;
 }
 .body-container {
   max-width: 1366px;
@@ -360,6 +365,7 @@ input:focus {
   padding: 15px 60px;
   background-color: var(--link-color);
   text-transform: uppercase;
+  border: 1px solid transparent;
 }
 @media screen and (max-width: 1023px) {
   .body-container .button-props {
@@ -372,6 +378,12 @@ input:focus {
   .body-container .button-props {
     font-size: 12px;
   }
+}
+.body-container .button-props:hover {
+  background-color: transparent;
+  border: 1px solid var(--font-prime_color);
+  transition: 0.3s;
+  color: var(--font-prime_color);
 }
 .body-container .carousal {
   background-image: url(images/curosal-bg.png);
@@ -456,6 +468,7 @@ input:focus {
   padding: 15px 60px;
   background-color: var(--link-color);
   text-transform: uppercase;
+  border: 1px solid transparent;
 }
 @media screen and (max-width: 1023px) {
   .body-container .carousal .card a {
@@ -468,6 +481,12 @@ input:focus {
   .body-container .carousal .card a {
     font-size: 12px;
   }
+}
+.body-container .carousal .card a:hover {
+  background-color: transparent;
+  border: 1px solid var(--font-prime_color);
+  transition: 0.3s;
+  color: var(--font-prime_color);
 }
 .body-container .our-products {
   margin-top: 50px;
@@ -619,6 +638,7 @@ input:focus {
   padding: 15px 60px;
   background-color: var(--link-color);
   text-transform: uppercase;
+  border: 1px solid transparent;
   background-color: var(--font-prime_color);
   color: var(--link-color);
 }
@@ -633,6 +653,12 @@ input:focus {
   .body-container .our-products .sample-visuals .product .about a {
     font-size: 12px;
   }
+}
+.body-container .our-products .sample-visuals .product .about a:hover {
+  background-color: transparent;
+  border: 1px solid var(--font-prime_color);
+  transition: 0.3s;
+  color: var(--font-prime_color);
 }
 @media screen and (max-width: 1023px) {
   .body-container .our-products .sample-visuals .product .about a {
@@ -743,6 +769,7 @@ input:focus {
   padding: 15px 60px;
   background-color: var(--link-color);
   text-transform: uppercase;
+  border: 1px solid transparent;
   background-color: #6E605D;
   color: var(--link-color);
 }
@@ -757,6 +784,12 @@ input:focus {
   .body-container .product-catelog-sec .wrapper .txt-cont a {
     font-size: 12px;
   }
+}
+.body-container .product-catelog-sec .wrapper .txt-cont a:hover {
+  background-color: transparent;
+  border: 1px solid var(--font-prime_color);
+  transition: 0.3s;
+  color: var(--font-prime_color);
 }
 @media screen and (max-width: 1023px) {
   .body-container .product-catelog-sec .wrapper .txt-cont a {
@@ -1014,6 +1047,7 @@ input:focus {
   padding: 15px 60px;
   background-color: var(--link-color);
   text-transform: uppercase;
+  border: 1px solid transparent;
   border: 2px solid #6E605D;
   padding: 15px 30px;
 }
@@ -1028,6 +1062,12 @@ input:focus {
   .body-container .about-glass-craft .wrapper .txt-cont a {
     font-size: 12px;
   }
+}
+.body-container .about-glass-craft .wrapper .txt-cont a:hover {
+  background-color: transparent;
+  border: 1px solid var(--font-prime_color);
+  transition: 0.3s;
+  color: var(--font-prime_color);
 }
 @media screen and (max-width: 1023px) {
   .body-container .about-glass-craft .wrapper .txt-cont a {
